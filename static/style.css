@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #0056b3;
+    font-size: 3rem;
+    /* Fixed spacing issue here */
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* Table and Cell Styling */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 3px solid #0056b3;
+    /* Thicker outer border */
+}
+
+td {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #ccc;
+    /* Lighter inner borders */
+    padding: 0;
+}
+
+/* Thicker borders to separate the 3x3 grids visually */
+td:nth-child(3n) {
+    border-right: 3px solid #0056b3;
+}
+
+tr:nth-child(3n) td {
+    border-bottom: 3px solid #0056b3;
+}
+
+/* Input Styling */
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    outline: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    /* Ensures inputs don't stretch the cells */
+}
+
+/* Highlights the cell when a user clicks on it */
+input:focus {
+    background-color: #e6f2ff;
+}
+
+/* Removes the default up/down arrows from number inputs in modern browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button{
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
